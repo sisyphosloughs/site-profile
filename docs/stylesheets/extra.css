@@ -1,0 +1,100 @@
+/* Schrift: Calibri aus dem Lebenslauf. Wo sie fehlt, greift Carlito
+   (metrisch kompatibel, SIL Open Font License), lokal eingebunden. */
+@font-face {
+  font-family: "Carlito";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/carlito-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Carlito";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/carlito-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Carlito";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/carlito-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Carlito";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/carlito-700-italic.woff2") format("woff2");
+}
+
+:root {
+  --md-text-font: Calibri, Carlito, "Segoe UI", sans-serif;
+  --akzent: #549e39; /* Akzentfarbe aus dem Lebenslauf */
+}
+
+/* Calibri wirkt bei gleicher Größe kleiner als die Standardschrift */
+.md-typeset {
+  font-size: 0.85rem;
+}
+
+/* Farben */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #549e39;
+  --md-primary-fg-color--light: #7fba67;
+  --md-primary-fg-color--dark: #3f7a2a;
+  --md-accent-fg-color: #3f7a2a;
+  --md-typeset-a-color: #3f7a2a; /* dunkleres Grün für gut lesbare Links */
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #549e39;
+  --md-primary-fg-color--light: #7fba67;
+  --md-primary-fg-color--dark: #3f7a2a;
+  --md-accent-fg-color: #7fba67;
+  --md-typeset-a-color: #7fba67;
+}
+
+/* Überschriften wie im Lebenslauf in der Akzentfarbe */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--akzent);
+  font-weight: 700;
+}
+
+a.glossar-link {
+  color: inherit;
+}
+a.glossar-link:hover abbr {
+  color: var(--md-accent-fg-color);
+}
+
+/* Porträtfoto auf der Startseite: rechts neben dem Text */
+.md-typeset img.profilfoto {
+  float: right;
+  width: 9rem;
+  height: auto;
+  margin: 0.4rem 0 1rem 1.5rem;
+  border-radius: 0.2rem;
+}
+@media screen and (max-width: 36em) {
+  .md-typeset img.profilfoto {
+    width: 6rem;
+    margin-left: 1rem;
+  }
+}
+/* Kontaktblock soll unter dem Foto beginnen */
+.md-typeset h2 {
+  clear: both;
+}
+
+/* Fußzeile: Links zu Kontakt, Impressum und Datenschutz */
+.md-copyright__highlight a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.md-copyright__highlight a:hover {
+  color: var(--md-footer-fg-color);
+}

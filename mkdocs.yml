@@ -1,0 +1,58 @@
+site_name: Benjamin Brücker
+site_description: Technischer Redakteur mit 19 Jahren Berufserfahrung
+copyright: >
+  <a href="/kontakt/">Kontakt</a> ·
+  <a href="/impressum/">Impressum</a> ·
+  <a href="/datenschutz/">Datenschutz</a>
+nav:
+  - Start: index.md
+  - Berufserfahrung: berufserfahrung.md
+  - Kenntnisse: kenntnisse.md
+  - Bildung und mehr: bildung.md
+  - Glossar: glossar.md
+theme:
+  name: material
+  language: de
+  font: false
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Zum dunklen Modus wechseln
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Zum hellen Modus wechseln
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/benjamin-bruecker
+      name: LinkedIn
+    - icon: fontawesome/brands/xing
+      link: https://www.xing.com/profile/Benjamin_Bruecker
+      name: Xing
+    - icon: fontawesome/brands/github
+      link: https://github.com/sisyphosloughs
+      name: GitHub
+extra_javascript:
+  - javascripts/glossar-links.js
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - abbr
+  - pymdownx.snippets:
+      base_path: [includes]
+      auto_append: [abbreviations.md]
+      check_paths: true

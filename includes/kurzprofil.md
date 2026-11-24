@@ -1,0 +1,7 @@
+- Langjährige Softwaredokumentation, zuletzt auch auftragsspezifische Betriebsanleitungen für Laseroptik
+- Modularisierte Dokumentation aus einer Quelle (Single-Source-Publishing) für Onlinehilfen, Schritt-für-Schritt-Anleitungen, Versionshinweise und mehr
+- UX-Writing und HTML: komplexe technische Inhalte verständlich vermitteln
+- Peer-Review und Korrektur von Texten aus Entwicklung und Product Management
+- Redaktionswerkzeuge: CCMS, Hilfe-Autorentools und Content-Delivery-Portale
+- Automatisierung mit Shell-Skripten und KI
+- Projekte nach Scrum und/oder nach klassischer Wasserfallmethode
