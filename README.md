@@ -16,7 +16,7 @@ python3 -m venv .venv
 ./deploy.sh             # baut die Seite und überträgt sie per rsync
 ```
 
-Das Skript baut `site/` neu und überträgt es nach `milos:/opt/www/profile/`. Es nutzt `rsync --delete`: Dateien auf dem Server, die lokal nicht mehr existieren, werden dort gelöscht. Der Host `milos` muss per SSH erreichbar sein (z. B. über einen Eintrag in `~/.ssh/config`).
+Das Skript baut `site/` neu und überträgt es nach zu meinem VPS. Es nutzt `rsync --delete`: Dateien auf dem Server, die lokal nicht mehr existieren, werden dort gelöscht. Der VPS muss per SSH erreichbar sein (z. B. über einen Eintrag in `~/.ssh/config`).
 
 Weiterführend: [Get started](https://zensical.org/docs/get-started/), [Grundeinstellungen](https://zensical.org/docs/setup/basics/), [Navigation](https://zensical.org/docs/setup/navigation/).
 
