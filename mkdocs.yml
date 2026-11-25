@@ -20,6 +20,7 @@ theme:
     - content.code.copy
     - content.tooltips
     - navigation.footer
+    - content.action.view  # View source of this page
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -56,3 +57,6 @@ markdown_extensions:
       base_path: [includes]
       auto_append: [abbreviations.md]
       check_paths: true
+repo_url: https://github.com/sisyphosloughs/site-profile
+repo_name: sisyphosloughs/site-profile
+edit_uri: tree/main/docs/
